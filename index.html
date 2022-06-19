@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel = "stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do</title>
+</head>
+<body>
+    <!-- 현재 시각 -->
+    <div class="clock">
+        <h2>00 : 00 : 00</h2>
+    </div>
+    <!-- 로그인 화면 커버 -->
+    <div id="cover" class="blurBox"></div>
+    <!-- 메인 화면 -->
+    <div id = "main" class="main">    
+        <!-- 닉네임&날씨 -->
+        <div id="MainLeft" class="mainleft">
+            <h3>wellcome</h3>
+            <h3 id = "greeting" class="hidden"></h3>
+            <!-- 날씨&시계 -->
+            <div id="leftContainer" class="shadowBlurBox">
+                <h2 id="mainclock">00: 00: 00</h2>
+                <div id = "weatherBox">
+                    <img id="weatherIcon">
+                    <span id = "city"></span>
+                    <span id = "weather"></span>
+                </div>
+            </div>
+        </div>
+        <!--to-do list -->
+        <div id="MainRight" class="mainright shadowBlurBox">
+            <h2> TO-DO LIST</h2>
+            <form id="todoForm">
+                <input class="Input" type="text" placeholder="Write a To Do and Press Enter" required>
+            </form>
+            <ul id="todoList"></ul>
+    </div>
+
+    <!-- 로그인 -->
+    <div id="loginDiv">
+        <form id = "loginForm">
+            <input 
+            class="Input"
+            required
+            type ="text"
+            placeholder="hello, what your name?">
+            <button class="loginBtn">Log In</button>
+        </form>    
+    </div>
+    <script src="/js/todo.js"></script>
+    <script src="/js/weather.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="/js/clock.js"></script>
+</body>
+</html>
